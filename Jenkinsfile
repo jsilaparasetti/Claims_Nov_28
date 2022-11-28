@@ -6,13 +6,13 @@ pipeline {
     stages { 
         stage('SCM Checkout') {
             steps{
-            git 'https://github.com/ramakant987/Claims_Nov_28.git'
+            git 'https://github.com/jsilaparasetti/Claims_Nov_28/claims.git'
             }
         }
 
         stage('Build docker image') {
             steps {  
-                sh 'docker build -t ramakant987/Claims_Nov_28:latest .'
+                sh 'docker build -t jsilaparasetti/Claims_Nov_28/claims:latest .'
 
             }
         }
